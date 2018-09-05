@@ -1,0 +1,8 @@
+<h3>Top Actors</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let actor of actors" routerLink="/detail/{{actor.id}}">
+    <div class="module actor">
+      <h4>{{actor.name}}</h4>
+    </div>
+  </a>
+</div>
